@@ -4,9 +4,13 @@ import ru.linkov.ss.obstacles.model.Runner;
 
 public class Wall {
 
-    private boolean successJump = true;
+    private int height;
 
-    public boolean checkSuccessJump(Runner runner) {
-        return successJump;
+    public Wall(int height) {
+        this.height = height;
+    }
+
+    public int getHeight() {
+        return height;
     }
 }

@@ -4,9 +4,13 @@ import ru.linkov.ss.obstacles.model.Runner;
 
 public class Treadmill {
 
-    private boolean successRun = true;
+    private int length;
 
-    public boolean checkSuccessRun(Runner runner) {
-        return successRun;
+    public Treadmill(int length) {
+        this.length = length;
+    }
+
+    public int getLength() {
+        return length;
     }
 }

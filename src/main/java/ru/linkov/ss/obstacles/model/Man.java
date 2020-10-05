@@ -3,24 +3,37 @@ package ru.linkov.ss.obstacles.model;
 public class Man implements Runner {
 
     private String name;
-    private boolean successJump;
-    private boolean successRun;
+    private int length;
+    private int height;
 
-    public Man (String name){
+    public Man (String name, int length, int height){
         this.name = name;
+        this.height = height;
+        this.length = length;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
-    public boolean getSuccessJump() {
-        return successJump;
+    @Override
+    public int getLength() {
+        return length;
     }
 
-    public boolean getSuccessRun() {
-        return successRun;
+    @Override
+    public int getHeight() {
+        return height;
     }
 
+    @Override
+    public String toString() {
+        return "Man{" +
+                "name='" + name + '\'' +
+                ", length=" + length +
+                ", height=" + height +
+                '}';
+    }
 }
 
